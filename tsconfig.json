@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es2023",                     // Modern JS support
+    "module": "commonjs",                   // Required for Node.js
+    "rootDir": "./src",                     // Your TypeScript source files
+    "outDir": "./dist",                     // Compiled JS files
+    "esModuleInterop": true,                // For clean imports like `import express from 'express'`
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,                         // Enables all strict type-checking
+    "skipLibCheck": true,                   // Speeds up build by skipping lib checks
+    "resolveJsonModule": true,              // Allows importing `.json` files
+    "moduleResolution": "node",             // Required for Node.js module resolution
+    "types": ["node"],                      // Use Node.js type definitions
+    "typeRoots": ["./node_modules/@types", "./src/types"]
+  },
+  "include": ["src/**/*", "src/types/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
