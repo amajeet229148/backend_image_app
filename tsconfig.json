@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es2023",                     // Modern JS support
+    "target": "es2021",                     // Modern JS support
     "module": "commonjs",                   // Required for Node.js
     "rootDir": "./src",                     // Your TypeScript source files
     "outDir": "./dist",                     // Compiled JS files
